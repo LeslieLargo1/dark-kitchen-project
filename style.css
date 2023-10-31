@@ -1,280 +1,244 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 90%;
-    height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("background_img.jpg") ;
-   
-    padding: 25px;
-    
+  width: 100%;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkred;
 }
 
-
-/* zuzana */
-
-.container {
+#buttons {
   display: flex;
-  flex-direction: column;
-
-}
-b{
-  font-size: larger;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .btn {
-    background-color: rgb(186, 248, 221);
-    width: 15vh;
-    height: 15vh;
-    border-radius: 15px;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    margin: 15px;
+  background-color: rgb(71 158 40);
+  color: white;
+  border: none;
+  width: 100%;
+  height: 7vh;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  /* margin: 8px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cart {
+  margin-top: 20px;
+  float: right;
+  margin-right: -60px;
+  width: 200px;
+  position: fixed;
+  padding: 20px 40px;
+  cursor: pointer;
+  z-index: 2;
+  right: 90px;
+  color: black;
+  background-color: rgb(255 255 255 / 84%);
+  border: none;
+  /* position: absolute; */
+  top: 30px;
+  right: 4rem;
+}
+
+#totalAmount {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.checkout {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(71 158 40);
+  color: white;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout:hover {
+  transform: scale(1.1);
+  background-color: rgb(248, 120, 40);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderSection {
+  width: 100%;
+  background-color: black;
+  /* height: 45rem; */
+  background-image: url(knife.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
-.btn:hover {
-    background-color: rgb(150, 232, 247);
-  }
-  #buttons{
-    display:flex;
-    justify-content:center;
-    flex-direction: row;
-    padding-bottom: 50px;
-  }
 
-  #cart {
-    margin-top: 20px;
-    float: right;
-    margin-right: -60px;
-    width: 200px;
-    position: fixed;
-    padding: 20px  40px;
-    cursor: pointer;
-    z-index: 1;
-    right: 90px;
-    color: black;
-    background-color:white;
-    border: 3px solid yellow;
-    border-radius: 30px;
-
-    background-color: #ccc;
-    
-  }
-        
-  .cartItems {
-    background-color: yellow;
-    width: 200px;
-  }
-  
-  .dark-mode {
-    background-color: #333;
-    color: #fff;
-  }
-
-  h2 .bi{
-    font-size: 32px;
-    font-weight: bold;
-  }
-    
-  #totalAmount{
-    font-size: 20px;
-    font-weight: bold;
-  }
- 
-  .checkout{
-    width: 100px;
-    height: 30px;
-    background-color: rgb(186, 248, 221);
-    border: 2px solid rgb(9, 9, 9);
-    font-size: larger;
-    border-radius: 10px; 
-    cursor: pointer;
-    margin-top: 15px;
-  }
-  .checkout:hover {
-    background-color: rgb(150, 232, 247);
-  }
-
-h1{
-    text-align: center;
-    font-size: 100px;
-    text-shadow: 6px 6px 8px #ff0000, 10px 10px 8px rgb(254, 174, 1), 15px 15px 8px yellow;
-    
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 45rem;
+  justify-content: center;
+  align-items: center;
 }
-h2 .bi{
+
+.piccola {
+  font-size: 5rem;
+}
+
+.pagetitle {
+  display: flex;
+  align-items: center;
+  padding: 6rem;
+  font-style: italic;
+  font-size: 35px;
+}
+
+
+.container {
+  width: 70%;
+}
+
+.FoodGallery,
+.DrinksSection,
+.DessertSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.FoodGallery img,
+.drinkgallery img,
+.DessertSection img {
+  height: 300px;
+  width: 298px;
+}
+
+.gallery,
+.drinkgallery,
+.dessertgallery {
+  width: 300px;
+  margin: 15px;
+  background-color: #5f1313;
+  color: white;
+  /* border: 2px solid rgb(176, 176, 176); */
+  text-align: center;
+}
+
+.gallery:hover,
+.drinkgallery:hover,
+.dessertgallery:hover {
+  transform: scale(1.1);
+}
+
+h2 .bi {
   font-size: 32px;
   font-weight: bold;
 }
 
 
-  .logo img{
-    width: 50vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    
-  }
-  
 
-  .logo{
-    display:flex;
-    justify-content:center;
-    -webkit-filter: drop-shadow(0px 0px 25px black);
-    filter: drop-shadow(white) ;
-  }
+li {
+  padding: 1rem;
+}
 
-
-/*FOOD*/
-
-.gallery {
-  width: 300px;
-  margin: 15px;
-  border: 3px solid #0b0a0a;
-  border-radius: 5px;
-  background-color: white;
+h1 {
+  color: white;
   text-align: center;
+  font-size: 40px;
 
-  
 }
-.FoodGallery img{
-  
-  height: 300px;
-  width: 295px;
-  }
 
-.FoodGallery{
+h2 .bi {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description {
+  font-weight: bold;
+}
+
+p {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*DRINKS*/
-
-.drinkgallery {
-  width: 300px;
-  background-color: white;
-  margin: 15px;
-  border: 3px solid #060505;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.DrinksSection{
+.addToCartBtn {
+  width: 85px;
+  height: 30px;
+  background-color: rgb(71 158 40);
+  color: white;
+  border: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-
-  
-
-.drinkgallery img{
-  height: 300px;
-  width: 295px;
-}
-  
-
-
-/*DESSERTS*/
-
-.dessertgallery {
-  margin: 15px;
-  border: 3px solid #0a0909;
-  border-radius: 5px;
-  background-color: white;
-  text-align: center;
-  
-}
-.DessertSection img{
-  
-  
-  height: 300px;
-}
-  
-.DessertSection{
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-
-.addToCartBtn{
-  width: 80px;
-  height: 25px;
-  background-color: rgb(186, 248, 221);
-  border: 2px solid grey;
-  border-radius: 10px;
-  display:flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-left: 5px;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .addToCartBtn:hover {
-    background-color: rgb(150, 232, 247);
-  }
-  #myBtn {
-    display: none; 
-    position: fixed;
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgb(6, 6, 6); 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 18px;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-
-
-
-/* leslie */
-
-
-
- .drinkgallery:hover {
-  transform: scale(1.2);
+  background-color: rgb(248, 120, 40);
 }
 
-.dessertgallery:hover {
-  transform: scale(1.2);
-} 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
 
-.gallery:hover{
-  transform: scale(1.2);
+#myBtn:hover {
+  background-color: #555;
 }
 
 footer {
   position: relative;
   bottom: 0;
-  width: 65%;
+  width: 100%;
   height: 130px;
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  margin-top: 343px;
-  margin-left: 250px;
-
+  flex-direction: row;
+  margin-top: 100px;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.copywrite {
+  display: flex;
+  align-items: center;
+}
