@@ -1,6 +1,10 @@
 # Piccola Cucina Italian Restaurant Website
 
 Welcome to Piccola Cucina, your go-to Italian restaurant for an exceptional online ordering experience!
+### project features
+- Responsive
+- Display Cards
+- Shopping Cart
 
 ## Introduction
 
