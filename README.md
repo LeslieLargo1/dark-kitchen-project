@@ -20,10 +20,6 @@ At Piccola Cucina, we're passionate about serving delicious Italian cuisine righ
 - Review your order, make any adjustments, and proceed to checkout.
 
 
-## Questions and Support
-
-If you have any questions or need assistance with our website, don't hesitate to contact our support team at support@PiccolaCucina.com.
-
 ## Enjoy Your Meal!
 
 Thank you for choosing Piccola Cucina Italian Restaurant. We're excited to bring the flavors of Italy to your doorstep. Enjoy your meal, and we look forward to serving you again soon!
